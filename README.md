@@ -6,36 +6,70 @@ COMO FUNCIONA:
 O programa armazena informações como Cidades, Especialidades Medicas, CID, Medicamentos, Medicos, Pacientes, agenda consultas e monitora o armazém de Medicamentos do hospital Utilizando um Menu.
 
 REQUISITOS:
-    Cidades: código, nome, UF;
-    Especialidades Médicas: código, descrição;
-    Médicos: código, nome, codigo_especialidade, endereço, telefone, codigo_cidade;
-    Pacientes: CPF, nome, endereço, codigo_cidade;
-    CID: código, descrição;
-    Medicamentos: código, descrição, quant_estoque, estoque_minimo, estoque_maximo, preço_unitario;
-    Consultas: codigo_consulta, cpf_paciente, cod_medico, data, horario, cod_CID, cod_medicamento, qtde_medicamento;
-ATIVIDADES: 
-    1) Escreva funções específicas para a leitura dos dados das estruturas: Cidades, Especialidades, CID, Medicamentos.
-    2) Escreva uma função para permitir a inclusão de novos registros na tabela de Médicos.
-    2.1) O programa deverá garantir que o código do médico a ser inserido não existe na tabela de Médicos.
-    2.2) Quando o usuário digitar o código da especialidade, o programa deverá buscar este código na tabela de Especialidades e exibir a descrição.
-    2.3) Quando o usuário digitar o código da cidade, o programa deverá buscar este código na tabela de Cidades e exibir o nome da cidade e UF.
-    3) Escreva uma função para permitir a inclusão de novos registros na tabela de Pacientes.
-    3.1) O programa deverá garantir que o CPF do paciente a ser inserido não existe na tabela de pacientes.
-    3.2) Quando o usuário digitar o código da cidade, o programa deverá buscar este código na tabela de Cidades e exibir o nome da cidade e UF.
-    4) Escreva uma função para permitir a exclusão de registros na tabela de Pacientes.
-    5) Escreva uma função para permitir o agendamento de uma consulta.
-    5.1) Quando o usuário digitar o CPF do paciente, o programa deverá buscar este código na tabela de Pacientes e exibir o nome do paciente e o nome da cidade e UF.
-    5.2) Quando o usuário digitar o código do médico, o programa deverá buscar este código na tabela de Médicos e exibir o nome do médico e a descrição da especialidade.
-    5.3) Quando o usuário digitar o código CID, o programa deverá buscar este código na tabela de CID e exibir a descrição.
-    5.4) Quando o usuário digitar o código do medicamento, o programa deverá buscar este código na tabela de Medicamentos e exibir a descrição.
-    5.5) Quando o usuário digitar a qtde_medicamento, o programa deverá acessar a tabela de Medicamentos e verificar se a quantidade em estoque é suficiente para atender a quantidade receitada na consulta.
-    5.5.1) O programa não deverá permitir a digitação de uma quantidade maior do que a quantidade disponível em estoque.
-    5.6) A quantidade do medicamento receitada deverá ser subtraída da quantidade em estoque do medicamento.
-    6) Escreva uma função para permitir ao usuário consultar os dados de determinado medicamento.
-    6.1) Para cada medicamento consultado, exibir: todos os seus dados e o valor total em estoque do medicamento (quant_estoque * preço_unitário).
-    7) Escreva uma função para exibir todos os registros da tabela de medicamentos que estejam com a quantidade em estoque abaixo do estoque mínimo. 
-    7.1) As seguintes informações devem ser exibidas: código, descrição, qtde estoque, estoque máximo, qtde a ser comprada, valor da compra.
-    7.1.1) A quantidade a ser comprada é calculada subtraindo o estoque máximo da quantidade em estoque.
-    7.2) Ao final, a função deverá exibir o valor total ser comprado.
-    8) Escreva uma função para exibir o valor total arrecadado com todas as consultas, que deve ser calculado pelo valor de cada consulta (R$100) acrescido do valor do medicamento receitado para cada consulta.    
-    8.1) O valor do medicamento receitado para cada consulta deve ser calculado multiplicando a quantidade de medicamento receitada pelo preço unitário do medicamento.
+    Escreva um programa para criar as seguintes estruturas que simularão arquivos sequenciais para uma aplicação de gerenciamento para um Hospital:
+
+Cidades: código, nome, UF
+
+Especialidades Médicas: código, descrição
+
+Médicos: código, nome, codigo_especialidade, endereço, telefone, codigo_cidade
+
+Pacientes: CPF, nome, endereço, codigo_cidade
+
+CID: código, descrição
+
+Medicamentos: código, descrição, quant_estoque, estoque_minimo, estoque_maximo, preço_unitario
+
+Consultas: codigo_consulta, cpf_paciente, cod_medico, data, horario, cod_CID, cod_medicamento, qtde_medicamento
+
+ATIVIDADES:
+
+1) Escreva funções específicas para a leitura dos dados das estruturas: Cidades, Especialidades, CID, Medicamentos.
+
+2) Escreva uma função para permitir a inclusão de novos registros na tabela de Médicos.
+
+2.1) O programa deverá garantir que o código do médico a ser inserido não existe na tabela de Médicos.
+
+2.2) Quando o usuário digitar o código da especialidade, o programa deverá buscar este código na tabela de Especialidades e exibir a descrição.
+
+2.3) Quando o usuário digitar o código da cidade, o programa deverá buscar este código na tabela de Cidades e exibir o nome da cidade e UF.
+
+3) Escreva uma função para permitir a inclusão de novos registros na tabela de Pacientes.
+
+3.1) O programa deverá garantir que o CPF do paciente a ser inserido não existe na tabela de pacientes.
+
+3.2) Quando o usuário digitar o código da cidade, o programa deverá buscar este código na tabela de Cidades e exibir o nome da cidade e UF.
+
+4) Escreva uma função para permitir a exclusão de registros na tabela de Pacientes.
+
+5) Escreva uma função para permitir o agendamento de uma consulta.
+
+5.1) Quando o usuário digitar o CPF do paciente, o programa deverá buscar este código na tabela de Pacientes e exibir o nome do paciente e o nome da cidade e UF.
+
+5.2) Quando o usuário digitar o código do médico, o programa deverá buscar este código na tabela de Médicos e exibir o nome do médico e a descrição da especialidade.
+
+5.3) Quando o usuário digitar o código CID, o programa deverá buscar este código na tabela de CID e exibir a descrição.
+
+5.4) Quando o usuário digitar o código do medicamento, o programa deverá buscar este código na tabela de Medicamentos e exibir a descrição.
+
+5.5) Quando o usuário digitar a qtde_medicamento, o programa deverá acessar a tabela de Medicamentos e verificar se a quantidade em estoque é suficiente para atender a quantidade receitada na consulta.
+
+5.5.1) O programa não deverá permitir a digitação de uma quantidade maior do que a quantidade disponível em estoque.
+
+5.6) A quantidade do medicamento receitada deverá ser subtraída da quantidade em estoque do medicamento.
+
+6) Escreva uma função para permitir ao usuário consultar os dados de determinado medicamento.
+
+6.1) Para cada medicamento consultado, exibir: todos os seus dados e o valor total em estoque do medicamento (quant_estoque * preço_unitário).
+
+7) Escreva uma função para exibir todos os registros da tabela de medicamentos que estejam com a quantidade em estoque abaixo do estoque mínimo. 
+
+7.1) As seguintes informações devem ser exibidas: código, descrição, qtde estoque, estoque máximo, qtde a ser comprada, valor da compra.
+
+7.1.1) A quantidade a ser comprada é calculada subtraindo o estoque máximo da quantidade em estoque.
+
+7.2) Ao final, a função deverá exibir o valor total ser comprado.
+
+8) Escreva uma função para exibir o valor total arrecadado com todas as consultas, que deve ser calculado pelo valor de cada consulta (R$100) acrescido do valor do medicamento receitado para cada consulta.
+
+8.1) O valor do medicamento receitado para cada consulta deve ser calculado multiplicando a quantidade de medicamento receitada pelo preço unitário do medicamento.
