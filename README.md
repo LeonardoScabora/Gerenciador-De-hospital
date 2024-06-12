@@ -1,12 +1,8 @@
 OBJETIVO:
-  É um gerenciador de hospital para monitorar os medicamentos, inserir medicos , pacientes e agendar consultas.
-  
-COMO FUNCIONA:
 
-O programa armazena informações como Cidades, Especialidades Medicas, CID, Medicamentos, Medicos, Pacientes, agenda consultas e monitora o armazém de Medicamentos do hospital Utilizando um Menu.
+Este programa serve para criar as seguintes estruturas que simularão arquivos sequenciais para uma aplicação de gerenciamento para um Hospital:
 
 REQUISITOS:
-    Escreva um programa para criar as seguintes estruturas que simularão arquivos sequenciais para uma aplicação de gerenciamento para um Hospital:
 
 Cidades: código, nome, UF
 
