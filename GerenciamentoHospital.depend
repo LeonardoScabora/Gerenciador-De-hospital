@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1716409531 source:c:\users\willi\desktop\faculdade\projeto begoso\gerenciamentohospital\main.cpp
+	<iostream>
+	<locale.h>
+
+1717412968 source:c:\pessoal\faculdade\segundo ano\algoritmo e estruturas de dados\projeto begoso\gerenciamentohospital\main.cpp
+	<iostream>
+	<locale.h>
+	<conio.h>
+	<string.h>
+	<locale.h>
+
+1717412247 source:c:\users\willi\desktop\faculdade\projeto begoso\projeto begoso\gerenciamentohospital\main.cpp
+	<iostream>
+	<locale.h>
+	<conio.h>
+	<string.h>
+	<locale.h>
+
