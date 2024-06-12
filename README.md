@@ -10,7 +10,7 @@ REQUISITOS:
     CID: código, descrição;
     Medicamentos: código, descrição, quant_estoque, estoque_minimo, estoque_maximo, preço_unitario;
     Consultas: codigo_consulta, cpf_paciente, cod_medico, data, horario, cod_CID, cod_medicamento, qtde_medicamento;
-ATIVIDADES:
+ATIVIDADES: 
     1) Escreva funções específicas para a leitura dos dados das estruturas: Cidades, Especialidades, CID, Medicamentos.
     2) Escreva uma função para permitir a inclusão de novos registros na tabela de Médicos.
     2.1) O programa deverá garantir que o código do médico a ser inserido não existe na tabela de Médicos.
