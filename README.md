@@ -1,7 +1,10 @@
 OBJETIVO:
   É um gerenciador de hospital para monitorar os medicamentos, inserir medicos , pacientes e agendar consultas.
+  
 COMO FUNCIONA:
+
 O programa armazena informações como Cidades, Especialidades Medicas, CID, Medicamentos, Medicos, Pacientes, agenda consultas e monitora o armazém de Medicamentos do hospital Utilizando um Menu.
+
 REQUISITOS:
     Cidades: código, nome, UF;
     Especialidades Médicas: código, descrição;
